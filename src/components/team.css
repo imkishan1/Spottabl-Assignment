@@ -1,0 +1,9 @@
+.basecard{
+    max-width: 800px;
+    min-height: 400px;
+    width: 100%;
+    background-color: #f8f9fe;
+    padding: 20px;
+    /* border-radius: 10px;
+    box-shadow: 0 0 30px rgba(104, 119, 195, 0.242); */
+}
