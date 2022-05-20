@@ -1,0 +1,186 @@
+.card{
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    margin-top: 20px;
+    background: rgb(254, 254, 254);
+    padding: 20px 16px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+.search {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width:100%;
+    height: 40px;
+    outline: 0;
+    padding: 5px 10px;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid #bfbfbf;
+    border-right: 0;
+    font-size: 1rem;
+    transition: 0.2s all ease-in-out;
+    color: #929090;
+
+}
+
+.search input::-webkit-input-placeholder{
+    color: #929090;
+}
+
+.search input:focus-within{
+    border: 1px solid #1e31a1;
+    border-right: 0;
+    caret-color: #1e31a1;
+    color: #1e31a1;
+}
+
+.search button {
+    width: 120px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background: #1e31a1;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.search button:hover{
+    background-color: #1a2983;
+}
+
+.head {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+
+/* Search Result CSS */
+
+.searchResultContainer{
+    max-width: 626px;
+    max-height: 320px;
+    width: 100%;
+    background:#fff;
+    height: 100%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 110px;
+    border-radius: 5px;
+    /* display: none; */
+    box-shadow: 0 0 30px rgba(0,0,0,0.06);
+    /* padding: 10px; */
+    overflow: hidden;
+    overflow-y: auto;
+   
+    
+}
+
+.searchResultContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.jobProfile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    text-transform: lowercase;
+  
+}
+
+.jobProfile .group-icon{
+    text-transform: capitalize !important;
+}
+
+.group-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.icon{
+    width: 15px !important;
+    height: auto;
+    color: rgb(185, 185, 185);;
+}
+
+.group-icon::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    margin-top:4px;
+    margin-left: 4px;
+    background: rgb(185, 185, 185);
+    border-radius: 50%;
+}
+
+.userHover{
+
+    padding: 26px !important;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.userHover:hover{
+    background-color: #bfbfbf90;
+}
+
+.tags-conatiner{
+    width: 80%;
+    position: absolute;
+    height: 30px;
+    /* color: white; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    transform: translate(10px,-30px);
+    pointer-events: all;
+}
+
+.tags-conatiner .tags{
+    background-color: #d7dcff;
+    color: #1e31a1;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width:40px;
+    max-width: max-content;
+    text-transform: capitalize;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    gap: 10px;
+    font-weight: 600;
+
+}
+
+
+.tags-conatiner .tags .closeIcon {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #1e31a1;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tags-conatiner .tags .closeIcon.close{
+        font-size: 0.8rem !important;
+        
+}

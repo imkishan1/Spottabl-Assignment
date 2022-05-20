@@ -1,0 +1,19 @@
+.userListing{
+    margin-top: 30px;
+    width: 100%;
+    height: 275px;
+    /* background: red; */
+    border-radius: 5px;
+    /* padding: 10px; */
+    border: 1px solid #bfbfbf;
+    overflow-y: auto;
+/* 
+    box-shadow: 
+    inset 0px 11px 8px -10px #CCC,
+    inset 0px -11px 8px -10px #CCC;  */
+
+}
+
+.userListing::-webkit-scrollbar{
+    display: none;
+}
