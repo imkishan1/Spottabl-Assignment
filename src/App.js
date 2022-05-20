@@ -85,7 +85,7 @@ const [employee, setEmployee] = useState([
         id:4,
         name: "Smriti wadhwa",
         intials: "sw",
-        // domain: "Senior Manager",
+        domain: "Senior Manager",
         email: "pundeel@spottabl.com",
       },
 

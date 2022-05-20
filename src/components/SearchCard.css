@@ -140,7 +140,7 @@
 }
 
 .tags-conatiner{
-    width: 80%;
+    width: max-content;
     position: absolute;
     height: 30px;
     /* color: white; */
